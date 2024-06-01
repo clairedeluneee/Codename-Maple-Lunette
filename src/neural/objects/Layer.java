@@ -20,7 +20,9 @@ public class Layer {
 
     // Logic
     public void connectLayer(Layer l) {for (Neuron n : getLayerNeurons()) {for (Neuron o : previousLayer.getLayerNeurons()) {n.connectNeuron(o);}}}
-
+    /**
+     * Recalculates the activations of the layers.
+     */
     public void recalculate() {for (Neuron n : layerNeurons) {n.recalculate();}}
 
 }
